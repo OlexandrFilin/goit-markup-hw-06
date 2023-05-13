@@ -640,19 +640,109 @@
 
           <!-- !!!!!!!!!!! КІНЕЦЬ контактів в   соц мережах для футера!!!!!!!!!!!!!!!!! -->
         </div>
+        <!--subscribe-->
+        <div class="footer-subscribe-div">
+          <p class="footer-social-paragraph">Subscribe</p>
+          <div class="div-footer-email">
+            <label for="footer-email"> </label>
+            <input
+              class="footer-inp-subscr"
+              type="email"
+              id="footer_email"
+              placeholder="Email"
+            />
+
+            <div class="footer-div-btn">
+              <button type="submit" class="footer-btn-subscr">Subscribe</button>
+              <svg class="footer-svg-plain" height="24" width="24">
+                <use
+                  href="/images/icons.svg#plane"
+                  class="footer-icon-plane"
+                ></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
 
-    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! modal window !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-    <div class="backdrop is-hidden" data-modal>
+    <!--!!!!!!!!!!!!!!!!!!!is-hidden"!!!!!!!!!!!!!!!! modal window !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="close-modwin-btn" data-modal-close>
           <svg class="close-modwin-icon" width="8" height="8">
             <use href="./images/icons.svg#close-btn"></use>
           </svg>
         </button>
+        <!-- <fieldset>
+          <legend>Leave your contacts and we will call you back</legend> -->
+        <strong class="mod-title"
+          >Leave your contacts and we will call you back</strong
+        >
+        <div class="registr">
+          <label class="name-mod-label mod-label" for="name-mod">Name</label>
+
+          <div class="wrap-div-iconsvg">
+            <input
+              class="name-mod-inp mod-inp"
+              type="text"
+              name="name-mod"
+              id="name-mod"
+              autofocus
+            />
+            <svg class="mod-svg-person mod-svg" height="18" width="18">
+              <use
+                href="/images/icons.svg#person"
+                class="mod-icon-person"
+              ></use>
+            </svg>
+          </div>
+
+          <label class="tel-mod-label mod-label" for="tel-mod">Phone</label>
+          <div class="wrap-div-iconsvg">
+            <input
+              class="tel-mod mod-inp"
+              type="tel"
+              name="tel-mod"
+              id="tel-mod"
+            />
+            <svg class="mod-svg-tel mod-svg" height="24" width="18">
+              <use href="/images/icons.svg#phone" class="mod-icon-phone"></use>
+            </svg>
+          </div>
+
+          <label class="email-mod-label mod-label" for="email-mod">Email</label>
+          <div class="wrap-div-iconsvg">
+            <input class="email-mod mod-inp" type="email" id="email-mod" />
+            <svg class="mod-svg-mail mod-svg" height="24" width="18">
+              <use href="/images/icons.svg#email" class="mod-icon-email"></use>
+            </svg>
+          </div>
+          <label class="comment-mod-label mod-label" for="comment"
+            >Comment</label
+          >
+          <textarea
+            name="comment-mod"
+            id="comment"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input
+            class="agr-mod-check mod-inp"
+            type="checkbox"
+            name="agr_policy"
+            id="agr_policy"
+            placeholder="Text input"
+          />
+          <label class="agr-mod-label" for="agr_policy"
+            >I accept the terms and conditions of the Privacy Policy</label
+          >
+          <button type="submit" class="btn-hero" data-modal-open>Send</button>
+        </div>
+        <!-- </fieldset> -->
       </div>
     </div>
+
     <!-- !!!!! JavaScript !!!!!!!! -->
     <script src="./js/modal.js"></script>
   </body>

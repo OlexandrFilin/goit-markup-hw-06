@@ -529,6 +529,9 @@ nav {
 .footerleft-div {
   margin-right: 120px;
 }
+.footerright-div {
+  margin-right: 80px;
+}
 .footer-logo {
   display: block;
   color: var(--logocolor-left); /* #4d5ae5;*/
@@ -569,6 +572,37 @@ nav {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-herotitle);
+}
+.footer-subscribe-div {
+}
+.div-footer-email {
+  display: flex;
+  gap: 24px;
+  background-color: var(--header-color);
+}
+.footer-inp-subscr {
+  width: 264px;
+  height: 40px;
+  background-color: var(--header-color);
+  border: 1px solid var(--background-color);
+  border-radius: 4px;
+  color: var(--background-color);
+}
+.footer-div-btn {
+}
+.footer-btn-subscr {
+  height: 40px;
+  width: 165px;
+  /* #4d5ae5 */
+  background-color: var(--background-btn-primary);
+  color: var(--background-color);
+}
+.footer-svg-plain {
+  fill: #e7e9fc;
+  /* #4d5ae5 */
+  background-color: var(--background-btn-primary);
+}
+.footer-icon-plane {
 }
 
 /* --!!!!!!!!!!!!!!!!!!!!!!!!!!!-portfolio --!!!!!!!!!!!!!!!!!!!!!--------------*/
@@ -708,7 +742,7 @@ nav {
   letter-spacing: 0.02em;
   color: var(--body-color); /* #434455; */
 }
-/* !!!!! modal window !!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! modal window !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .backdrop {
   position: fixed;
@@ -732,12 +766,13 @@ nav {
   /* transform: scale(0); */
 }
 .modal {
+  padding: 72px 24px 24px;
   position: absolute;
   transform: translateY(-50%) translateX(-50%);
   top: calc(50%);
   left: calc(50%);
   width: 408px;
-  /* height: 584px; */
+
   min-height: 576px;
   /* background-color: var(--background-color-btn-close); #e7e9fc;*/
   background: var(--backgroun-modal); /*#fcfcfc;*/
@@ -784,4 +819,82 @@ nav {
 .close-modwin-btn:focus > .close-modwin-icon {
   /* fill: #e7e9fc; */
   fill: #ffffff;
+}
+.mod-title {
+  display: block;
+  margin-bottom: 16px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  /* NAVY BLUE */
+
+  color: #2e2f42;
+}
+.mod-label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.mod-label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height, or 117% */
+
+  letter-spacing: 0.04em;
+
+  /* LIGHT SLATE */
+
+  color: #8e8f99;
+}
+.mod-inp {
+  display: block;
+  margin-bottom: 8px;
+  padding-left: 38px;
+  width: 100%;
+  height: 40px;
+
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  color: #2e2f42;
+  outline: transparent;
+  outline-offset: -1px;
+  transition: border-color var(--anim-fast);;
+}
+
+.mod-inp:focus {
+  border: 1px solid #4d5ae5;
+ 
+}
+.mod-inp:focus + .mod-svg {
+  fill: #4d5ae5;
+
+  
+}
+
+.mod-svg:focus,
+.mod-svg:hover {
+  fill #4d5ae5;
+}
+.mod-svg {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  color: #2e2f42;
+   transition: fill var(--anim-fast);
+   pointer-events: none;
+}
+.wrap-div-iconsvg {
+  position: relative;
 }
