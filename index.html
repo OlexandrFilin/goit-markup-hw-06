@@ -653,13 +653,17 @@
             />
 
             <div class="footer-div-btn">
-              <button type="submit" class="footer-btn-subscr">Subscribe</button>
-              <svg class="footer-svg-plain" height="24" width="24">
-                <use
-                  href="/images/icons.svg#plane"
-                  class="footer-icon-plane"
-                ></use>
-              </svg>
+              <button type="submit" class="footer-btn-subscr">
+                Subscribe
+                <span >
+                  <svg class="footer-svg-plain" height="24" width="24">
+                    <use
+                      href="/images/icons.svg#plane"
+                      class="footer-icon-plane"
+                    ></use>
+                  </svg>
+                </span>
+              </button>
             </div>
           </div>
         </div>
@@ -667,7 +671,7 @@
     </footer>
 
     <!--!!!!!!!!!!!!!!!!!!!is-hidden"!!!!!!!!!!!!!!!! modal window !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-modwin-btn" data-modal-close>
           <svg class="close-modwin-icon" width="8" height="8">
@@ -722,21 +726,34 @@
             >Comment</label
           >
           <textarea
+            class="mod-txtar-com mod-inp"
             name="comment-mod"
             id="comment"
             cols="30"
             rows="10"
-          ></textarea>
-          <input
-            class="agr-mod-check mod-inp"
-            type="checkbox"
-            name="agr_policy"
-            id="agr_policy"
             placeholder="Text input"
-          />
-          <label class="agr-mod-label" for="agr_policy"
-            >I accept the terms and conditions of the Privacy Policy</label
-          >
+          ></textarea>
+          <!-- visually-hidden -->
+          <label class="agr-mod-label">
+            <input
+              class="agr-mod-check visually-hidden"
+              type="checkbox"
+              name="agr_policy"
+              id="agr_policy"
+            />
+            <svg class="check-svg-mod" width="16" hight="16">
+              <use
+                class="check-icon-act-mod"
+                href="/images/icons.svg#check_activ"
+              ></use>
+              <use
+                class="check-icon-noact-mod"
+                href="/images/icons.svg#check_no_activ"
+              ></use>
+            </svg>
+            I accept the terms and conditions of the&nbsp;
+            <span><a class="mod-link link" href="">Privacy Policy</a></span>
+          </label>
           <button type="submit" class="btn-hero" data-modal-open>Send</button>
         </div>
         <!-- </fieldset> -->
