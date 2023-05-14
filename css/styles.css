@@ -610,8 +610,7 @@ nav {
 }
 .footer-btn-subscr {
   position: relative;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 8px 24px;
   height: 40px;
   width: 165px;
   /* #4d5ae5 */
