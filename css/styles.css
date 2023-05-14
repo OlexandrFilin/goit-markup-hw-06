@@ -580,10 +580,18 @@ nav {
 }
 .footer-subscribe-div {
 }
+.subscribe-div {
+  margin-right: 24px;
+}
 .div-footer-email {
   display: flex;
-  gap: 24px;
+
   background-color: var(--header-color);
+}
+
+.footer-email {
+  display: block;
+  margin-right: 25px;
 }
 .footer-inp-subscr {
   width: 264px;
@@ -591,22 +599,30 @@ nav {
   background-color: var(--header-color);
   border: 1px solid var(--background-color);
   border-radius: 4px;
+  padding-left: 16px;
+}
+.footer-inp-subscr::placeholder {
   color: var(--background-color);
 }
+
 .footer-div-btn {
   position: relative;
 }
 .footer-btn-subscr {
+  position: relative;
+  padding-left: 24px;
+  padding-right: 24px;
   height: 40px;
   width: 165px;
   /* #4d5ae5 */
   background-color: var(--background-btn-primary);
   color: var(--background-color);
+  text-align: left;
 }
 .footer-svg-plain {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 24px;
   transform: translateY(-50%);
   fill: #e7e9fc;
   /* #4d5ae5 */
