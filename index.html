@@ -641,33 +641,33 @@
           <!-- !!!!!!!!!!! КІНЕЦЬ контактів в   соц мережах для футера!!!!!!!!!!!!!!!!! -->
         </div>
         <!--subscribe-->
-        <form name="subscribe-form-footer">
+        <form name="subscribe-form-footer" class="subscribe-form-footer">
           <!-- <div class="footer-subscribe-div"> -->
           <p class="footer-social-paragraph">Subscribe</p>
+          <label for="footer_email"> </label>
           <div class="div-footer-email">
-            <div class="subscribe-div">
-              <label for="footer_email"> </label>
-              <input
-                class="footer-inp-subscr"
-                type="email"
-                id="footer_email"
-                placeholder="Email"
-              />
-            </div>
+            <!-- <div class="subscribe-div"> -->
+            <input
+              class="footer-inp-subscr"
+              type="email"
+              id="footer_email"
+              placeholder="Email"
+            />
+            <!-- </div> -->
 
-            <div class="footer-div-btn">
-              <button type="submit" class="footer-btn-subscr">
-                Subscribe
-                <span>
-                  <svg class="footer-svg-plain" height="24" width="24">
-                    <use
-                      href="/images/icons.svg#plane"
-                      class="footer-icon-plane"
-                    ></use>
-                  </svg>
-                </span>
-              </button>
-            </div>
+            <!-- <div class="footer-div-btn"> -->
+            <button type="submit" class="footer-btn-subscr">
+              Subscribe
+              <span>
+                <svg class="footer-svg-plain" height="24" width="24">
+                  <use
+                    href="./images/icons.svg#plane"
+                    class="footer-icon-plane"
+                  ></use>
+                </svg>
+              </span>
+            </button>
+            <!-- </div> -->
           </div>
           <!-- </div> -->
         </form>
@@ -687,88 +687,78 @@
         <strong class="mod-title"
           >Leave your contacts and we will call you back</strong
         >
-        <form name="subscreibe_footer">
-          <div class="registr">
-            <label class="name-mod-label mod-label" for="name-mod">Name</label>
+        <form name="subscreibe_mod">
+          <label class="name-mod-label mod-label" for="name-mod">Name</label>
 
-            <div class="wrap-div-iconsvg">
-              <input
-                class="name-mod-inp mod-inp"
-                type="text"
-                name="name-mod"
-                id="name-mod"
-                autofocus
-              />
-              <svg class="mod-svg-person mod-svg" height="18" width="18">
-                <use
-                  href="/images/icons.svg#person"
-                  class="mod-icon-person"
-                ></use>
-              </svg>
-            </div>
-
-            <label class="tel-mod-label mod-label" for="tel-mod">Phone</label>
-            <div class="wrap-div-iconsvg">
-              <input
-                class="tel-mod mod-inp"
-                type="tel"
-                name="tel-mod"
-                id="tel-mod"
-              />
-              <svg class="mod-svg-tel mod-svg" height="24" width="18">
-                <use
-                  href="/images/icons.svg#phone"
-                  class="mod-icon-phone"
-                ></use>
-              </svg>
-            </div>
-
-            <label class="email-mod-label mod-label" for="email-mod"
-              >Email</label
-            >
-            <div class="wrap-div-iconsvg">
-              <input class="email-mod mod-inp" type="email" id="email-mod" />
-              <svg class="mod-svg-mail mod-svg" height="24" width="18">
-                <use
-                  href="/images/icons.svg#email"
-                  class="mod-icon-email"
-                ></use>
-              </svg>
-            </div>
-            <label class="comment-mod-label mod-label" for="comment"
-              >Comment</label
-            >
-            <textarea
-              class="mod-txtar-com mod-inp"
-              name="comment-mod"
-              id="comment"
-              cols="30"
-              rows="10"
-              placeholder="Text input"
-            ></textarea>
-            <!-- visually-hidden -->
-            <label class="agr-mod-label">
-              <input
-                class="agr-mod-check visually-hidden"
-                type="checkbox"
-                name="agr_policy"
-                id="agr_policy"
-              />
-              <svg class="check-svg-mod" width="16" height="16">
-                <use
-                  class="check-icon-act-mod"
-                  href="/images/icons.svg#check_activ"
-                ></use>
-                <use
-                  class="check-icon-noact-mod"
-                  href="/images/icons.svg#check_no_activ"
-                ></use>
-              </svg>
-              I accept the terms and conditions of the&nbsp;
-              <span><a class="mod-link link" href="">Privacy Policy</a></span>
-            </label>
-            <button type="submit" class="btn-hero" data-modal-open>Send</button>
+          <div class="wrap-div-iconsvg">
+            <input
+              class="name-mod-inp mod-inp"
+              type="text"
+              name="name-mod"
+              id="name-mod"
+              autofocus
+            />
+            <svg class="mod-svg-person mod-svg" height="18" width="18">
+              <use
+                href="./images/icons.svg#person"
+                class="mod-icon-person"
+              ></use>
+            </svg>
           </div>
+
+          <label class="tel-mod-label mod-label" for="tel-mod">Phone</label>
+          <div class="wrap-div-iconsvg">
+            <input
+              class="tel-mod mod-inp"
+              type="tel"
+              name="tel-mod"
+              id="tel-mod"
+            />
+            <svg class="mod-svg-tel mod-svg" height="24" width="18">
+              <use href="./images/icons.svg#phone" class="mod-icon-phone"></use>
+            </svg>
+          </div>
+
+          <label class="email-mod-label mod-label" for="email-mod">Email</label>
+          <div class="wrap-div-iconsvg">
+            <input class="email-mod mod-inp" type="email" id="email-mod" />
+            <svg class="mod-svg-mail mod-svg" height="24" width="18">
+              <use href="./images/icons.svg#email" class="mod-icon-email"></use>
+            </svg>
+          </div>
+          <label class="comment-mod-label mod-label" for="comment"
+            >Comment</label
+          >
+          <textarea
+            class="mod-txtar-com mod-inp"
+            name="comment-mod"
+            id="comment"
+            cols="30"
+            rows="10"
+            placeholder="Text input"
+          ></textarea>
+          <!-- visually-hidden -->
+          <label class="agr-mod-label">
+            <input
+              class="agr-mod-check visually-hidden"
+              type="checkbox"
+              name="agr_policy"
+              id="agr_policy"
+            />
+            <svg class="check-svg-mod" width="16" height="16">
+              <use
+                class="check-icon-act-mod"
+                href="./images/icons.svg#check_activ"
+              ></use>
+              <use
+                class="check-icon-noact-mod"
+                href="./images/icons.svg#check_no_activ"
+              ></use>
+            </svg>
+            I accept the terms and conditions of the&nbsp;
+            <span><a class="mod-link link" href="">Privacy Policy</a></span>
+          </label>
+          <button type="submit" class="btn-hero" data-modal-open>Send</button>
         </form>
         <!-- </fieldset> -->
       </div>
